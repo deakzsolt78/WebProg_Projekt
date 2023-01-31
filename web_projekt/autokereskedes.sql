@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2022 at 08:05 PM
+-- Generation Time: Jan 31, 2023 at 03:55 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -42,7 +42,8 @@ INSERT INTO `kocsik` (`marka`, `model`, `allapot`, `tulajdonos_id`) VALUES
 ('Audi', 'a5', 'elhanyag', 2),
 ('Mercedes', 'glc', 'kivalo', 1),
 ('opel', 'astra', 'kiválo', 1),
-('Toyota', 'hilux', 'uj', 5);
+('skoda', 'kodiaq', 'új', 8),
+('Toyota', 'hilux', 'jo', 4);
 
 -- --------------------------------------------------------
 
@@ -64,7 +65,10 @@ INSERT INTO `tulajdonos` (`id`, `nev`) VALUES
 (2, 'Nagy Jozsi'),
 (3, 'Pál Albert'),
 (4, 'Nagy Elek'),
-(5, 'Nagy Eniko');
+(5, 'Nagy Eniko'),
+(6, 'Nagy Veronka'),
+(7, 'Kis Antal Jozsi'),
+(8, 'Onodi Atila');
 
 --
 -- Indexes for dumped tables

@@ -1,4 +1,38 @@
-<?php
+<!DOCTYPE html>
+<head>
+    <title>Autokereskedes | Főoldal</title>
+    <link rel="stylesheet" href="style/autok css.css"/>
+
+</head>
+<body>
+
+<div class="fejlec1">
+    <div class="fejlec">
+        <h1>használt autó kereskedés</h1>
+        <ul>
+            <li><a href="index.php">FŐOLDAL</a></li>
+            <li><a href="ujvevo.php">ügyfél hozaadása</a></li>
+            <li><a href="ujkocsi.php">auto tábla bövitése</a></li>
+
+        </ul>
+        <div class="menu">
+            <ul>
+                <li><a href="#">menu</a>
+                    <ul>
+                        <li><a href="index.php">FŐOLDAL</a></li>
+                        <li><a href="ujvevo.php">ügyfél hozaadása</a></li>
+                        <li><a href="ujkocsi.php">auto tábla bövitése</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="oldal1">
+    <h1>Ügyfél hozáadása</h1>
+
+    <?php
 //Kapcsolódás MySQL-re
 session_start();
 $server = "localhost";
@@ -12,17 +46,19 @@ if ($conn->connect_error)
 }
 
 echo '
-<a href=index.php>Vissza a kezdooldalra</a><br><br>
 <form method="post" action="" enctype="multipart/form-data"> 
-    <label for="nev"> Név:
-        <input type="text" name="nev">
+    <label for="nev"> <p>Név:</p>
+        <input type="text" name="nev"><br>
     </label>
     <br>
-    <label for="id"> ID:
-        <input type="number" name="id">
+    <br>
+    <label for="id"> <p>ID:</p>
+        <input type="number" name="id"><br>
     </label>
     <br>
-    <input type="submit" name="submit" value="Tulajdonos hozaadása!"/>
+    <button>
+    <input type="submit" name="submit" value="Ügyfél hozaadása!"/>
+    </button>
 </form>';
 
 if (!empty($_POST["nev"])  && !empty($_POST["id"]))
@@ -35,10 +71,13 @@ if (!empty($_POST["nev"])  && !empty($_POST["id"]))
     if($result->num_rows == 0)
     {
         if ($conn->query($sql) === TRUE) {
-            echo "A tulajdonos sikeresen hozaadva!";
+            echo '<p>A tulajdonos sikeresen hozaadva!</p>';
         } else {
-            echo "MySQL Hiba: " . $conn->error;
+            echo '<p>MySQL Hiba</p>' . $conn->error;
         }
     }
-    else echo "Ez az ID már használva van!";
+    else echo '<p>Ez az ID már használva van!</p>';
 }
+?>
+</div>
+</body>

@@ -1,0 +1,335 @@
+body{
+  margin: 0;
+  background: url(../hatter/road.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.oldal1{
+  
+  max-width:1000px;
+  min-width:500px;
+  margin-top: 160px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  background-color: black;
+  opacity: 0.85;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px 2px rgba(241, 237, 7, 0.61), 2px 2px 5px 2px rgba(243, 219, 0, 0.767);
+  overflow: auto;
+}
+
+  .oldal1 h1{
+    z-index: 5;
+    color: rgb(3, 3, 0);
+    margin: 10px 20px;  
+    padding: 18px 10px 2px 20px;   
+    text-shadow: 1px 1px 100px rgb(248, 252, 3), 1px 1px 5px rgb(227, 252, 9), 0 0 15px rgb(202, 189, 2);
+    font-family: Stencil Std, fantasy;
+  }
+  .oldal1 p{
+    margin: 0% 2%;
+    padding: 2% 1%;
+    color: rgb(255, 217, 0);
+    text-align: initial;
+    font-size: 20px;
+    font-family: Bradley Hand, cursive;
+  }
+
+   .oldal1 ul{     
+      z-index: 10;
+      margin-right: 3%;
+      margin-top: 20px;  
+      float: right;
+    }
+    .oldal1 ul li{
+      z-index: 10;
+      display: inline-block;
+      margin: 5px 5px;
+    }
+    .oldal1 ul li button{
+        padding: 10px 18px;
+        background: linear-gradient( #e09c08c5 15%, #f7f300e7 51%, #e09c08c5 85%);
+        color: rgb(0, 0, 0); 
+        z-index: 10;  
+        box-shadow: 0 2px 2px 3px #20201780, 0 3px 5px 0 #f3f305;  
+        border-radius: 100px;  
+        transition: all 0.7s;
+        font-family: OCR A Std, monospace;
+        font-size: 16px;
+    }
+    .oldal1 ul li button:hover{
+      background: linear-gradient( #757574 10%, #313131e7 51%, #757574 85%);
+      color: rgb(233, 250, 2);
+      box-shadow: 0 2px 2px 3px #f3ef09b2, 0 3px 5px 0 #b3b300;
+      z-index: 10; 
+    }
+    .oldal1 button{
+      float: right;
+      font-family: OCR A Std, monospace;
+      font-size: 20px;
+      padding: 10px 18px;
+      margin: 2px 10px 8px 8px;
+      background: linear-gradient( #e09c08c5 15%, #f7f300e7 51%, #e09c08c5 85%);
+      color: rgb(0, 0, 0); 
+      z-index: 10;
+      box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.411), 0 6px 20px 0 rgba(243, 168, 5, 0.616);  
+      border-radius: 100px; 
+      transition: all 0.7s;
+      
+    }
+
+    .oldal1 button:hover{
+      background: linear-gradient( #757574 10%, #313131e7 51%, #757574 85%);
+      color: rgb(233, 250, 2);
+      box-shadow: 0 2px 2px 3px #f3ef09b2, 0 3px 5px 0 #b3b300;
+      z-index: 10;
+    }
+
+    .oldal1 table{
+      z-index: 10;
+      margin: 5px 15px;
+      width: 85%;
+    } 
+      .oldal1 table caption{
+        color: rgb(235, 200, 6);
+        font-family: OCR A Std, monospace;
+        font-size: 20px;
+      }
+      .oldal1 table tr th {
+        color: rgb(0, 0, 0);
+        font-size: 28px;
+        font-family: OCR A Std, monospace;
+        margin: 5px;
+        background-color: rgb(255, 153, 0);
+      }
+      .oldal1 table tr:hover th
+        {
+            background-color:rgba(185, 85, 3, 0.863);
+        }
+        .oldal1 table tr:nth-child(even) td 
+            {
+                background-color: rgb(255, 224, 124);
+            }
+            .oldal1 table tr:hover td
+              {
+                background-color:rgb(61, 35, 1);
+                color:rgb(255, 218, 8);
+              }
+      .oldal1 table tr td {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-family: OCR A Std, monospace;
+        margin: 5px;
+      }
+
+
+  .oldal1 a:visited{
+    color: rgb(241, 246, 247);
+  }
+  .oldal a:link{
+    color: rgb(247, 135, 8);
+  }
+  .oldal1 a:link{
+    color: rgb(247, 135, 8);
+  }
+  .oldal a:hover{
+    color: rgb(241, 6, 6);
+  }
+  .oldal1 a:hover{
+    color: rgb(241, 6, 6);
+  }
+  .oldal a:active{
+    color: rgb(8, 91, 245);
+  }
+  .oldal1 a:active{
+    color: rgb(8, 91, 245);
+  }
+  .oldal a{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .oldal1 a{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+.fejlec1{
+  z-index:9;
+  height: 10px;
+}
+
+.fejlec{
+  position: fixed;
+  background-image: url(../hatter/up2.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+  height: 80px;
+  width: 100%;                  
+  margin: 0px auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0px 18px 8px 8px rgba(0, 0, 0, 0.61), 7px 5px 10px 5px rgba(218, 217, 211, 0.767);
+}
+  .fejlec h1{
+    z-index: 10;
+    color: rgb(3, 3, 0);
+    float: left;
+    margin: 10px 10px;     
+    text-shadow: 1px 5px 10px rgb(245, 201, 8), 1px 1px 25px rgb(218, 241, 8), 0 0 25px rgb(202, 189, 2);      
+    font-family: Stencil Std, fantasy;
+}
+
+  .fejlec ul { 
+    position: relative;            
+    z-index: 10;
+    list-style: none;
+    font-size: 0;
+    margin-right: 8%;
+    margin-top: 30px;  
+    float: right;
+    
+}
+    .fejlec ul li {
+      z-index: 10;
+      display: inline-block;
+      font-size: 25px;
+      position: relative;
+      margin: 0 5px;
+      
+}
+      .fejlec ul li a {
+        padding: 10px 18px;
+        background: linear-gradient( #f1f1f0 5%, #f7f300e7 61%, #e09c08c5 80%);
+        color: rgb(0, 0, 0);
+        text-decoration: none;   
+        z-index: 10;
+        box-shadow: 0 2px 2px 3px #20201780, 0 3px 5px 0 #f3f305;  
+        border-radius: 100px;
+        margin: auto;  
+        transition: all 0.7s;  
+        font-family: OCR A Std, monospace;
+}
+
+          .fejlec ul li a:hover,
+          .fejlec ul li:hover > a {
+            background: linear-gradient( #757574 10%, #313131e7 51%, #757574 85%);
+            color: rgb(233, 250, 2);
+            box-shadow: 0 2px 2px 3px #f3ef09b2, 0 3px 5px 0 #b3b300;
+            z-index: 10;
+}
+.menu ul{
+  display: none;
+  list-style: none;
+}
+.menu ul li{
+  display: inline;
+  position: relative;
+}
+.menu ul li ul { /*ez a lenyilo ablakokhoz van*/
+  display: none;
+  width: 238px;
+  padding: 0px;
+  margin: 0px 10px;
+  position: absolute;
+  top: 35px;
+  right: -10px;
+}
+
+.menu ul li:hover ul {
+  display: block;
+}
+
+.menu ul li ul li {
+  display: block;
+}
+
+  .menu ul li ul li a {
+      display: block;
+      margin: 1px 0px;
+  }
+@media(max-width:1270px){
+  .fejlec ul{
+    display: none;
+  }
+  .menu ul{
+    display: initial;
+    float: right;
+    z-index: 10;
+  }
+
+  .oldal1{
+    margin: 160px 2px 0px 2px;
+  }
+
+}
+
+@media(max-width:600px){
+  .video1{
+    height: 500px;
+    width: 100%;
+  }
+  .oldal{
+    width: 100%;
+    margin: 8px -2px;
+    min-width: 50px;
+  }
+  
+  .oldal h2,
+  .oldal p{
+    width: 80%;
+  }
+
+
+  .oldal1{
+    margin-top: 180px;
+    min-width: 50px;
+  }
+  .oldal1 table{
+    width: 100%;
+  }
+  .oldal1 table caption{
+    font-size: 15px;
+  }
+  .oldal1 table tr th {
+    font-size: 18px; 
+  }
+  .oldal1 table tr td {
+    font-size: 12px;
+  }
+
+  .oldal1 h2,
+  .oldal1 p{
+    width: 75%;
+  }
+
+  .fejlec{   
+    height: 130px;
+  }
+
+
+}
+
+  /* ezek a scrollbart alakitsák átol*/
+::-webkit-scrollbar {
+  width: 20px;
+  color: #000000;
+  background-color: #363434ce;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+  border-radius: 100px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( #f59402e8 0%, #f8e800fb 51%, #030300b0 95%); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient( #f1f1f0 0%, #f7e600fb 51%, #030300b0 85%); 
+}

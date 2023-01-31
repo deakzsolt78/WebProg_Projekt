@@ -1,4 +1,38 @@
-<?php
+<!DOCTYPE html>
+<head>
+    <title>Autokereskedes | Főoldal</title>
+    <link rel="stylesheet" href="style/autok css.css"/>
+
+</head>
+<body>
+
+<div class="fejlec1">
+    <div class="fejlec">
+        <h1>használt autó kereskedés</h1>
+        <ul>
+            <li><a href="index.php">FŐOLDAL</a></li>
+            <li><a href="ujvevo.php">uj ügyfél hozaadása</a></li>
+            <li><a href="ujkocsi.php">auto tábla bövitése</a></li>
+
+        </ul>
+        <div class="menu">
+            <ul>
+                <li><a href="#">menu</a>
+                    <ul>
+                        <li><a href="index.php">FŐOLDAL</a></li>
+                        <li><a href="ujvevo.php">uj ügyfél hozaadása</a></li>
+                        <li><a href="ujkocsi.php">auto tábla bövitése</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="oldal1">
+    <h1>Autó hozáadása</h1>
+
+    <?php
 //Kapcsolódás MySQL-re
 session_start();
 $server = "localhost";
@@ -12,25 +46,28 @@ if ($conn->connect_error)
 }
 
 echo '
-<a href=index.php>Vissza a kezdooldalra</a><br><br>
 <form method="post" action="" enctype="multipart/form-data"> 
-    <label for="marka"> Automarka:
-        <input type="text" name="marka">
+    <label for="marka"> <p>Automarka:</p>
+        <input type="text" name="marka"><br>
     </label>
     <br>
-    <label for="model"> Automedl megnevezése:
-        <input type="text" name="model">
+    
+    <label for="model"> <p>Automedl megnevezése:</p>
+        <input type="text" name="model"><br>
     </label>
     <br>
-    <label for="allapot"> Auto állapota:
-        <input type="text" name="allapot">
+    <label for="allapot"> <p>Auto állapota:</p>
+        <input type="text" name="allapot"><br>
     </label>
     <br>
-    <label for="tulajdonos_id"> Auto tulajdonosanak az ID-ja:
-        <input type="number" name="tulajdonos_id">
+    <label for="tulajdonos_id"> <p>Auto tulajdonosanak az ID-ja:</p>
+        <input type="number" name="tulajdonos_id"><br>
     </label>
     <br>
+    <br>
+    <button>
     <input type="submit" name="submit" value="Auto hozáadása!"/>
+    </button>
 </form>';
 
 if (!empty($_POST["marka"])  && !empty($_POST["model"]) && !empty($_POST["allapot"]) && !empty($_POST["tulajdonos_id"]))
@@ -47,13 +84,19 @@ if (!empty($_POST["marka"])  && !empty($_POST["model"]) && !empty($_POST["allapo
             $sql = "INSERT INTO kocsik (marka , model, allapot, tulajdonos_id) VALUES ('". $marka ."', '". $model ."', '".  $allapot ."', '". $tulajdonos_id ."')";
 
             if ($conn->query($sql) === TRUE) {
-                echo "Auto hozaadva!";
+                 echo'<p>Auto hozaadva!</p>' ;
+
             } else {
-                echo "MySQL Hiba: " . $conn->error;
+                echo '<p>MySQL Hiba </p>' . $conn->error;
             }
 
             $row = $result->fetch_assoc();
-        } else echo "Nincs ilyen ID-jü autotulajdonos!";
-    } else echo "Hibás autotulajdonos id!";
+        } else echo '<p>Nincs ilyen ID-jü autotulajdonos!</p>';
+    } else echo '<p>Hibás autotulajdonos id!</p>';
 
 }
+
+?>
+</div>
+</body>
+
